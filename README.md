@@ -1,0 +1,29 @@
+# duchess
+
+*An api built with Starlette.*
+
+## Installation
+
+clone:
+```
+$ git clone git@github.com:sungeer/duchess.git
+$ cd duchess
+```
+create & activate virtual env then install dependency:
+
+with venv/virtualenv + pip:
+```
+$ python -m venv env  # use `python3 ...` for Python3 on Linux & macOS
+$ source env/bin/activate  # use `env\Scripts\activate` on Windows
+$ pip install -r requirements.txt
+```
+then run:
+```
+$ flask run
+* Running on http://127.0.0.1:5000/
+```
+
+## License
+
+This project is licensed under the MIT License (see the
+[LICENSE](LICENSE) file for details).

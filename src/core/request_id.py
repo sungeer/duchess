@@ -17,3 +17,7 @@ def register_request_id(app):
         request_id = g.get('request_id', '')
         response.headers['X-Request-ID'] = request_id
         return response
+
+    @app.teardown_request
+    def clear_request_id(exc):
+        request_id_var.set(None)

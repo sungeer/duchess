@@ -38,5 +38,5 @@ def register_errors(app):
         http_code = 500
         code = ErrCode.SERVER_ERROR
 
-        logger.exception('[server error] path={}', request.path)
+        logger.opt(exception=exc).error('[server error] path={}', request.path)
         return fail(err_msg, http_code, code)
